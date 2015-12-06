@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    transform: scale(.5);
+    transform-origin: 0 0;
+    width: 200%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.sort-menu {
+    background: #ec5e2f;
+    height: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: calc((100% - 590px)/2);
+    padding-left: calc((100% - 590px)/2);
+}
+
+.link{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f3997c;
+    text-align: center;
+    text-decoration: none;
+}
+
+.active{
+    width: 210px;
+    height: 75px;
+    color: white;
+    background: transparent;
+    border: 2px solid #f28f6e;
+    border-radius: 50px;
+    padding-top: 20px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.channel{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 170vh;
+    padding: 672px 85px 40px 85px;
+}
+
+.channel-title{
+    font-size: 72px;
+    font-weight: bold;
+    color: #fff;
+    flex-basis: 50%;
+    margin: 0;
+}
+.following{
+    width: 205px;
+    height: 75px;
+    background: white;
+    border-radius: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f96332;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.followers{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    flex-basis: 50%;
+}
+
+.avatars-followers{
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel-science{
+    background: url("../img/home/science/background.png") no-repeat;
+    background-size: cover;
+}
+
+.channel-fashion{
+    background: url("../img/home/Fashion/background.png") no-repeat;
+    background-size: cover;
+}
+
+.channel-technology{
+    background: url("../img/home/Technology/background.png")no-repeat;
+    background-size: cover;
+}
+
+.channel-environment{
+    background: url("../img/home/Environment/background.png") no-repeat;
+    background-size: cover;
+}
