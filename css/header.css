@@ -1,0 +1,32 @@
+body{
+    transform: scale(.44);
+}
+header{
+    height: 122px;
+    background: #f96332;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 65px;
+    padding-right: 65px;
+    font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.links-left {
+    display: flex;
+    align-items: center;
+}
+
+.page-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 100px;
+}
+.links-right{
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    align-items: center;
+}
