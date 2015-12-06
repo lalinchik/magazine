@@ -1,14 +1,11 @@
-body{
-    transform: scale(.44);
-}
 header{
     height: 122px;
     background: #f96332;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: calc((100% - 2900px)/2);
+    padding-right: calc((100% - 2900px)/2);
     font-family: "Montserrat", "Arial", sans-serif;
 }
 
