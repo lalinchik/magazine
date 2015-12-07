@@ -61,6 +61,8 @@ article {
     font-size: 20px;
     color: #000;
     margin: 0 55px 0 0;
+    display: flex;
+    align-items: center;
 }
 
 .time {
@@ -68,6 +70,8 @@ article {
     color: #000;
     flex: 1;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .source::before {
@@ -191,8 +195,8 @@ video {
     display: flex;
     justify-content: space-between;
     margin-top: -100px;
-    padding-left: calc((100% - 1500px) / 2);
-    padding-right: calc((100% - 1500px) / 2);
+    padding-left: calc((100% - 1600px) / 2);
+    padding-right: calc((100% - 1600px) / 2);
 }
 
 .photo-description {
@@ -206,4 +210,115 @@ video {
     font-size: 26px;
     text-align: center;
     color: #999999;
+}
+
+/*********************************************************************************************************************/
+
+.comments {
+    padding-left: calc((100% - 1900px) / 2);
+    padding-right: calc((100% - 1900px) / 2);
+}
+
+.header-comments {
+    height: 200px;
+    background: #ec5e30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: calc((100% - 1600px) / 2);
+    padding-right: calc((100% - 1600px) / 2);
+}
+
+.number-of-comments {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.comments-sort-links {
+    display: flex;
+}
+
+.comments-sort-links a {
+    display: block;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.active {
+    width: 150px;
+    height: 50px;
+    border: 2px solid #f18764;
+    border-radius: 50px;
+    color: #f07e59;
+    padding-top: 10px;
+    margin-top: -10px;
+}
+
+.comment-container {
+    padding-left: calc((100% - 1600px) / 2);
+    padding-right: calc((100% - 1600px) / 2);
+}
+
+.comment {
+    display: flex;
+    height: 280px;
+    align-items: center;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.comment img {
+    margin-right: 35px;
+}
+
+.commentary {
+    flex: 1;
+}
+
+.username {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+.comment-text {
+    font-size: 28px;
+    color: #000;
+}
+
+.info-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 315px;
+    padding-bottom: 35px;
+}
+
+.comment-time {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7f7f7f;
+    display: flex;
+    align-items: center;
+}
+
+.comment-time::before {
+    content: url("../img/full-story/comments/Icon%20-%20Time.png");
+    margin-right: 16px;
+}
+
+.like {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7f7f7f;
+    display: flex;
+    align-items: center;
+}
+
+.like::before {
+    content: url("../img/full-story/comments/Icon%20-%20Like.png");
+    margin-right: 16px;
 }
