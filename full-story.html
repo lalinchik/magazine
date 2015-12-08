@@ -5,6 +5,8 @@
     <title>Full story</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/full-story.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/full-story.js" async></script>
 </head>
 <body>
 <header>
@@ -57,6 +59,7 @@
             <p class="fact-text">“Over the span of the satellite record, Arctic sea ice has been declining
                 significantly,
                 while sea ice in the Antarctic has increased very slightly”</p>
+
             <p class="fact-author">- NOAA</p>
         </div>
 
@@ -128,6 +131,7 @@
 
             <div class="commentary">
                 <p class="username">Mike Taylor</p>
+
                 <p class="comment-text">Such a massive change in such a short time is extremely unusual.</p>
             </div>
 
@@ -142,6 +146,7 @@
 
             <div class="commentary">
                 <p class="username">Sophia Anderson</p>
+
                 <p class="comment-text">Loss of Arctic sea ice is just one of the many changes that are accelerating
                     it.</p>
             </div>
@@ -157,6 +162,7 @@
 
             <div class="commentary">
                 <p class="username">Charlie Harris</p>
+
                 <p class="comment-text">Perhaps they had the same thing in the early 20th century.</p>
             </div>
 
@@ -172,13 +178,36 @@
             <img src="img/full-story/comments/Avatar4.png">
 
             <form>
-                <input type="file" name="file">
-                <input type="text" name="comment" placeholder="Write something...">
+                <div class="input-container">
+                    <img id="upload-trigger" src="img/full-story/comments/Icon%20-%20Attachment.png">
+                    <input id="upload" type="file" name="file">
+                    <textarea name="comment" placeholder="Write something..."></textarea>
+                </div>
                 <input class="btn" type="submit" value="Submit">
             </form>
         </div>
     </div>
 </section>
+
+<footer>
+    <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Term & Conditions</a>
+        <a href="#">Privacy Policy</a>
+    </div>
+
+    <div class="footer-contacts-block">
+        <div class="social">
+            <a href="#"><img src="img/footer/facebook.png"></a>
+            <a href="#"><img src="img/footer/twitter.png"></a>
+            <a href="#"><img src="img/footer/instagram.png"></a>
+        </div>
+
+        <div class="copyright">
+            <p>@ 2015 All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
