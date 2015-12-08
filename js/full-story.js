@@ -3,9 +3,11 @@ document.querySelector("#upload-trigger").addEventListener("click", function (ev
 });
 
 window.addEventListener("scroll", function(event) {
+    var SCALE = 0.5; // transform: scale(.5)
+
     var video = document.querySelector("video");
-    var top = video.offsetTop / 2;
-    var bottom = (video.offsetTop + video.offsetHeight) / 2;
+    var top = video.offsetTop * SCALE;
+    var bottom = (video.offsetTop + video.offsetHeight) * SCALE;
     var scrollTop = document.body.scrollTop;
     var scrollBottom = scrollTop + document.documentElement.clientHeight;
 
