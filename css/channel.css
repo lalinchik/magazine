@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Bold.ttf);
+    src: url(../font/Montserrat-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    transform: scale(.5);
+    transform-origin: 0 0;
+}
+
+body {
+    width: 200%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.banner {
+    background: url("../img/channel/banner.png") no-repeat;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 92px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 260px 0 95px 0;
+}
+
+.following {
+    display: block;
+    width: 205px;
+    height: 75px;
+    background: white;
+    border-radius: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f96332;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.followers {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin: 120px 0 55px 0;
+}
+
+.avatars-followers {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles-channel {
+    display: flex;
+}
+
+.art {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+
+.image-bottom img,
+.image-top img,
+.art-text {
+    height: 550px;
+    width: 100%;
+}
+
+.art-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.image-bottom, .image-top {
+    position: relative;
+}
+
+.image-bottom::before {
+    content: "";
+    border: 20px solid transparent;
+    border-top: 20px solid #fff;
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: calc(50% - 20px);
+}
+
+.image-top::before {
+    content: "";
+    border: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.art h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-top: 135px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.source, .time {
+    font-size: 20px;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.source::before {
+    content: url("../img/full-story/Icon%20-%20Source.png");
+    width: 23px;
+    height: 30px;
+    margin-right: 16px;
+}
+
+.time::before {
+    content: url("../img/full-story/Icon%20-%20Time.png");
+    margin-right: 16px;
+}
