@@ -23,7 +23,7 @@ body {
 
 .main-container{
     display: flex;
-    height: 1995px;
+    height: 1500px;
     background: url("../img/contact/Background%20Image.png") no-repeat -150px 0,
     linear-gradient(#e55121, #060201) no-repeat;
     background-size: cover;
@@ -39,7 +39,7 @@ h1{
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 400px;
+    margin-top: 150px;
     margin-bottom: 20px;
 }
 
@@ -137,9 +137,51 @@ textarea{
 
 .map{
     flex-basis: 50%;
+    position: relative;
+}
+.map::before{
+    content: url("../img/contact/Pin.png");
+    position: absolute;
+    top: 755px;
+    left: 530px;
 }
 
 .map img{
     width: 100%;
-    height: 1996px;
+    height: 1500px;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 230px;
+    background: white;
+    position: absolute;
+    top: 528px;
+    left: 631px;
+}
+
+.address::before{
+    content: "";
+    border: 15px solid transparent;
+    border-left: 15px solid white;
+    border-top: 15px solid white;
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 230px;
+}
+.address-text{
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+}
+
+.number{
+    font-size: 24px;
+    color: #b2b2b2;
+    text-align: center;
 }
