@@ -1,0 +1,197 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Bold.ttf);
+    src: url(../font/Montserrat-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    transform: scale(.5);
+    transform-origin: 0 0;
+}
+
+body {
+    width: 200%;
+    font-family: "Montserrat", "Arial", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: #ec5e2f;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 44px;
+    font-weight: bold;
+    color: #fff;
+    margin: 130px 0 100px;
+}
+
+.sorted-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 580px;
+    margin-bottom: 130px;
+}
+
+.sorted-links a{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.active{
+    width: 210px;
+    height: 75px;
+    color: white;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding-top: 20px;
+}
+
+.statistics-in-percentage{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.index{
+    height: 644px;
+    width: 704px;
+    opacity: .5;
+}
+.index1{
+    background:url("../img/overview/Image1.png") no-repeat;
+}
+
+.index3{
+    background: url("../img/overview/Image.png") no-repeat;
+}
+
+.index h2{
+    font-size: 64px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 220px;
+}
+
+.percentage{
+    font-size: 342px;
+    font-weight: bold;
+    color: #fff;
+    opacity: .4;
+    margin-top: -55px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+.index .percentage:after{
+    content: "%";
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 56px;
+    margin-top: 75px;
+}
+
+.main-index {
+    width: 1400px;
+    height: 900px;
+    background: url("../img/overview/Image2.png") no-repeat;
+    z-index: 1;
+}
+
+.main-index h2{
+    font-size: 92px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 314px;
+}
+
+.main-index .percentage{
+    font-size: 480px;
+    margin: -85px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-index .percentage:after{
+    content: "%";
+    font-size: 80px;
+    margin-top: 110px;
+}
+
+.statistic-number{
+    font-size: 92px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 18px;
+}
+
+.statistic-text{
+    font-size: 22px;
+    font-weight: bold;
+    color: #f4a58a;
+    text-align: center;
+}
+
+.user-statistics{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.regulation{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 120px;
+}
+
+.progress-checkbox{
+    display: flex;
+}
+.progress-checkbox label{
+    display: block;
+    width: 112px;
+    position: relative;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + span{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-bottom: 4px solid #ee7d58;
+    cursor: pointer;
+}
+
+
+input[type="radio"]:checked + span{
+    border-bottom: 4px solid #fff;
+}
+
