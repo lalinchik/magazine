@@ -16,6 +16,7 @@ html {
 body {
     font-family: "Montserrat", "Arial", sans-serif;
     margin: 0;
+    width: 200%;
 }
 
 .settings {
@@ -23,7 +24,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1180px;
     padding-left: calc((1180px - 670px) / 2);
     padding-right: calc((1180px - 670px) / 2);
 }
@@ -33,7 +33,7 @@ body {
     margin: 120px 0 100px;
 }
 
-#upload {
+#set-upload {
     display: none;
 }
 
@@ -45,6 +45,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.download-photo:hover{
+    cursor: pointer;
 }
 
 .avatar {
@@ -148,7 +152,7 @@ input[type="checkbox"]:checked + span {
     background: #d4542a url("../img/settings/On.png") no-repeat 22px -5px;;
 }
 
-.btn {
+.save-settings {
     width: 400px;
     height: 110px;
     background: transparent;
@@ -161,9 +165,10 @@ input[type="checkbox"]:checked + span {
     margin-top: 80px;
 }
 
-.link {
-    width: 150%;
+.settings-link{
+    width: 50%;
     display: flex;
     justify-content: space-between;
-    margin: -100px 0 100px;
+    margin: -80px 0 100px;
 }
+

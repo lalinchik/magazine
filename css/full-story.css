@@ -170,7 +170,7 @@ video {
     margin-top: -1190px;
 }
 
-.line2 {
+.story-line2 {
     margin-top: 120px;
     margin-bottom: 150px;
 }
@@ -281,7 +281,7 @@ video {
     flex: 1;
 }
 
-.username {
+.comment-username {
     font-size: 28px;
     font-weight: bold;
     color: #000;
@@ -292,7 +292,7 @@ video {
     color: #000;
 }
 
-.info-block {
+.comment-info-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -378,7 +378,7 @@ textarea{
     color: #999999;
 }
 
-.btn{
+.comment-submit {
     width: 315px;
     height: 110px;
     background: #fa6231 url("../img/full-story/comments/Icon%20-%20Submit.png") no-repeat 65px 32px;

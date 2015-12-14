@@ -31,7 +31,7 @@ body {
     padding-left: calc((100% - 590px)/2);
 }
 
-.link{
+.sort-link{
     display: block;
     font-size: 22px;
     font-weight: bold;

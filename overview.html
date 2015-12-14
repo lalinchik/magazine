@@ -5,25 +5,98 @@
     <title>Overview</title>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/overview.css">
     <link rel="stylesheet" href="css/footer.css">
+    <script src="js/header.js" async></script>
 </head>
 <body>
 
 <header>
-    <div class="links-left">
-        <img class="menu-icon" src="img/header/Icon%20-%20Menu.png">
+    <section class="header">
+        <div class="links-left">
+            <a href="#" id="menu-button">
+                <img class="menu-icon" src="img/header/Icon%20-%20Menu.png">
+            </a>
+            <p class="page-title">Overview</p>
+        </div>
 
-        <p class="page-title">Overview</p>
-    </div>
+        <a class="logo" href="#"><img src="img/header/Logo.png"></a>
 
-    <a class="logo" href="#"><img src="img/header/Logo.png"></a>
+        <div class="links-right">
+            <a href="#"><img src="img/header/Icon%20-%20Search.png"></a>
+            <a href="#" id="profile-button">
+                <img src="img/header/Avatar.png"></a>
+            <a href="#"><img src="img/header/Icon%20-%20Bookmark.png"></a>
+        </div>
+    </section>
 
-    <div class="links-right">
-        <a href="#"><img src="img/header/Icon%20-%20Search.png"></a>
-        <a href="#"><img src="img/header/Avatar.png"></a>
-        <a href="#"><img src="img/header/Icon%20-%20Bookmark.png"></a>
-    </div>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <nav class="navigator" id="menu-block">
+        <ul>
+            <li><a class="close" href="#" onclick="document.getElementById('menu-block').style.visibility = 'hidden'">
+                <img src="img/menu/Icon%20-%20Close.png"></a></li>
+            <li><a class="nav-link" href="#"><img src="img/menu/Icon%20-%20News.png">news</a></li>
+            <li><a class="nav-link" href="home.html"><img src="img/menu/Icon%20-%20Channels.png">channels</a></li>
+            <li><a class="nav-link" href="#"><img src="img/menu/Icon%20-%20Bookmarks.png">bookmarks</a></li>
+            <li><a class="nav-link" href="overview.html"><img src="img/menu/Icon%20-%20Overview.png">overview</a></li>
+            <li><a class="nav-link" href="timeline.html"><img src="img/menu/Icon%20-%20Timeline.png">timeline</a></li>
+            <li><a class="nav-link" href="#" id="profile-button-menu">
+                <img src="img/menu/Icon%20-%20Profile.png">profile</a></li>
+            <li><a class="nav-link" href="settings.html"><img src="img/menu/Icon%20-%20Settings.png">settings</a></li>
+            <li><hr class="line line1"/></li>
+            <li><a class="nav-link" href="contact.html"><img src="img/menu/Icon%20-%20Contact.png">contact us</a></li>
+            <li><a class="nav-link" href="#"><img src="img/menu/Icon%20-%20Terms.png">terms</a></li>
+        </ul>
+
+
+        <hr class="line line2"/>
+
+        <div class="log-out">
+            <div>
+                <a class="nav-link" href="#">log out</a>
+                <p class="user">Thomas Schneider</p>
+            </div>
+            <img src="img/menu/avatar.png">
+        </div>
+    </nav>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <section class="profile" id="profile-block">
+        <a class="close-profile" onclick="document.getElementById('profile-block').style.visibility = 'hidden'">
+            <img src="img/menu/Icon%20-%20Close.png"></a>
+
+        <div class="avatar-username">
+            <img src="img/profile/Avatar.png">
+            <h1 class="username">Thomas schneider</h1>
+        </div>
+
+        <p class="profession">Photographer</p>
+
+        <div class="info-profile">
+            <div class="block">
+                <p class="meaning">26</p>
+                <p class="meaning-title">Comments</p>
+            </div>
+
+            <div class="block">
+                <p class="meaning">7</p>
+                <p class="meaning-title">Channels</p>
+            </div>
+
+            <div class="block">
+                <p class="meaning">48</p>
+                <p class="meaning-title">Bookmarks</p>
+            </div>
+        </div>
+
+        <button class="btn">Edit Profile</button>
+
+        <div class="link">
+            <a class="next" href="#"><img src="img/profile/next.png"></a>
+            <a class="logout" href="#"><img src="img/profile/Icon%20-%20Logout.png"></a>
+        </div>
+    </section>
 </header>
 
 <section class="main-container">

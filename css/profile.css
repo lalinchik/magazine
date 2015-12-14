@@ -1,42 +1,40 @@
-@font-face {
-    font-family: Montserrat;
-    src: url(../font/Montserrat-Bold.ttf);
-    src: url(../font/Montserrat-Regular.ttf);
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    transform: scale(.5);
-    transform-origin: 0 0;
-}
-
-body {
-    font-family: "Montserrat", "Arial", sans-serif;
-    margin: 0;
-}
-
 .profile {
-    background: #ec5e2f;
+    visibility: hidden;
+    position: absolute;
+    top: 122px;
+    right: 0;
+    z-index: 3;
+    /*background: #ec5e2f;*/
+    background: url("../img/menu/Background.png") no-repeat, linear-gradient(to top, #060201, #e55121) no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1180px;
-    padding-left: calc((1180px - 670px) / 2);
-    padding-right: calc((1180px - 670px) / 2);
+    width: 800px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.avatar {
-    margin: 120px 0 60px;
+.close-profile{
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+}
+
+.avatar-username{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0 110px;
+
 }
 
 .username {
-    font-size: 92px;
+    font-size: 55px;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
+    margin: 0;
     text-align: center;
 }
 
@@ -44,7 +42,7 @@ body {
     font-size: 40px;
     font-weight: bold;
     color: #f6af97;
-    margin: 0 0 230px;
+    margin: 0 0 130px;
 }
 
 .info-profile {
@@ -58,12 +56,12 @@ body {
     flex-direction: column;
 }
 
-.meaning {
-    font-size: 92px;
+.meaning{
+    font-size: 60px;
     font-weight: bold;
     color: #fff;
     text-align: center;
-    margin: 0 0 35px;
+    margin: 0;
 }
 
 .meaning-title {
@@ -73,8 +71,8 @@ body {
 }
 
 .btn {
-    width: 400px;
-    height: 110px;
+    width: 300px;
+    height: 90px;
     background: transparent;
     border: 2px solid #f6af97;
     border-radius: 50px;
@@ -82,11 +80,11 @@ body {
     font-weight: bold;
     color: #fff;
     text-align: center;
-    margin: 220px 0 340px;
+    margin: 130px 0 85px;
 }
 
 .link {
-    width: 150%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
